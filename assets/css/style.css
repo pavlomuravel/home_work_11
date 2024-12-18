@@ -265,6 +265,26 @@ footer .footern__content_conteiner p{
   color:white;
   padding-top:15px;
 }
+.content_about p{
+  font-size:8px;
+  padding-inline:9%;
+}
+
+.main__content_projekt{
+  gap:10px;
+}
+
+.main__content_work{
+  height:auto;
+}
+.main__content_work .content_work__conteiner{
+  overflow:hidden;
+  padding-bottom:50px;
+}
+.main__content_work .content_work__conteiner p{
+  height:auto;
+}
+
 *{
   -webkit-box-sizing:border-box;
           box-sizing:border-box;
@@ -290,13 +310,13 @@ body{
 }
 
 @media (max-width: 1129px){
-  .conteiner__video_work{
+  .content_work__conteiner{
+    overflow:hidden;
+  }
+  .content_work__conteiner .conteiner__video_work{
     padding-inline:9%;
     max-width:90%;
     max-height:90%;
-  }
-  .content_work__conteiner{
-    overflow:hidden;
   }
 }
 
@@ -304,11 +324,20 @@ body{
   body{
     min-width:600px;
   }
+  .heder__content{
+    padding-left:10%;
+  }
+  .heder__content .content_nav__link a{
+    font-size:14px;
+  }
   .main__content_projekt{
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
   }
-  .conteiner__video_work{
+  .main__content_work .content_work__conteiner{
+    overflow:hidden;
+  }
+  .main__content_work .content_work__conteiner .conteiner__video_work{
     padding-inline:20%;
     max-width:80%;
     height:523px;
@@ -319,17 +348,8 @@ body{
     width:95px;
     height:95px;
   }
-  .heder__content{
-    padding-left:10%;
-  }
   .footern__content{
     padding-left:10%;
-  }
-  .content_nav__link a{
-    font-size:14px;
-  }
-  .content_work__conteiner{
-    overflow:hidden;
   }
 }
 
@@ -341,21 +361,17 @@ body{
     padding-left:5%;
     padding-right:10%;
   }
-  .footern__content{
-    padding-left:5%;
-    padding-right:10%;
-  }
-  .content_nav__link{
+  .heder__content .content_nav__link{
     gap:6%;
     row-gap:10px;
     -ms-flex-wrap:wrap;
         flex-wrap:wrap;
   }
+  .heder__content .content_nav__link a{
+    font-size:12px;
+  }
   .heder__content_conteiner{
     max-width:100%;
-  }
-  .content_nav__link a{
-    font-size:12px;
   }
   .heder__content_title h1{
     font-size:38px;
@@ -379,19 +395,19 @@ body{
   .content_about h2{
     font-size:29px;
   }
-  .content_work__conteiner p{
-    font-size:12px;
-  }
-  .footern__content h3{
-    font-size:18px;
-  }
-  .footern__content p{
-    font-size:9px;
-  }
   .main__content_projekt{
     gap:10px;
   }
-  .conteiner__video_work{
+  .main__content_work{
+    height:920px;
+  }
+  .main__content_work .content_work__conteiner{
+    overflow:hidden;
+  }
+  .main__content_work .content_work__conteiner p{
+    font-size:12px;
+  }
+  .main__content_work .content_work__conteiner .conteiner__video_work{
     padding-inline:30%;
     max-width:70%;
     max-height:407px;
@@ -402,11 +418,15 @@ body{
     margin-left:-582px;
     margin-top:152px;
   }
-  .main__content_work{
-    height:920px;
+  .footern__content{
+    padding-left:5%;
+    padding-right:10%;
   }
-  .content_work__conteiner{
-    overflow:hidden;
+  .footern__content h3{
+    font-size:18px;
+  }
+  .footern__content p{
+    font-size:9px;
   }
 }
 
@@ -414,36 +434,39 @@ body{
   body{
     min-width:220px;
   }
-  .content_about p{
-    font-size:9px;
-    padding-inline:10%;
+  .heder__content_nav{
+    padding-top:20px;
   }
-  .content_nav__link{
+  .heder__content_nav .content_nav__link{
     gap:8%;
     row-gap:10px;
     padding:10px;
   }
-  .content_work__conteiner p{
-    height:auto;
-    padding-inline:5%;
-    font-size:10px;
-    width:340px;
+  .main__content_about .content_about p{
+    font-size:9px;
+    padding-inline:10%;
   }
   .main__content_projekt{
     gap:10px;
     height:100%;
     padding-block:10px;
   }
-  .conteiner__video_work{
-    padding-inline:35%;
-    height:300px;
+  .main__content_work{
+    height:auto;
   }
-  .content_work__conteiner{
+  .main__content_work .content_work__conteiner{
     overflow:hidden;
     padding-bottom:50px;
   }
-  .heder__content_nav{
-    padding-top:20px;
+  .main__content_work .content_work__conteiner p{
+    height:auto;
+    padding-inline:5%;
+    font-size:10px;
+    width:340px;
+  }
+  .main__content_work .content_work__conteiner .conteiner__video_work{
+    padding-inline:35%;
+    height:300px;
   }
   .main__content_work .content_work__conteiner .conteiner__icon_pley{
     position:absolute;
@@ -452,41 +475,18 @@ body{
     width:60px;
     height:60px;
   }
-  .main__content_work{
-    height:auto;
-  }
 }
 
 @media (max-width: 375px){
   body{
     min-width:220px;
   }
-  .heder__content_title p{
-    padding-right:100px;
-  }
-  .content_about p{
-    font-size:8px;
-    padding-inline:9%;
-  }
-  .content_nav__link{
+  .heder__content_conteiner .heder__content_nav .content_nav__link{
     gap:8%;
     row-gap:9px;
     padding:9px;
   }
-  .content_work__conteiner p{
-    height:auto;
-    padding-inline:5%;
-    font-size:9px;
-    width:237px;
-  }
-  .main__content_projekt{
-    gap:10px;
-  }
-  .content_work__conteiner{
-    overflow:hidden;
-    padding-bottom:50px;
-  }
-  .main__content_work{
-    height:auto;
+  .heder__content_title p{
+    padding-right:100px;
   }
 }
