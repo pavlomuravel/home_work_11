@@ -1,6 +1,19 @@
 @use"reset";
+@use"heder";
+@use"main";
+@use"footer";
 @use"media";
 
+@mixin main_tex {
+  font-size: 16px;
+  line-height: 26.25px;
+}
+
+$predominant_color: #ffff;
+$silver_color:#EEEFF1;
+$blu_color:#34547A;
+$color_tex:#727272;
+$color_title:#000000;
 * {
   box-sizing: border-box;
 }
@@ -15,7 +28,7 @@ body {
   margin: 0 auto;
 
   &__content {
-    background-color: #EEEFF1;
+    background-color:$silver_color;
     height: 700px;
     padding-right: 458px;
     overflow: hidden;
@@ -42,7 +55,7 @@ body {
       font-size: 16px;
       line-height: 26.25px;
       letter-spacing: 0.02em;
-      color: #727272;
+      color: $color_tex;
       width: 540px;
       padding-top: 55px;
       padding-bottom: 57px;
@@ -50,8 +63,8 @@ body {
   }
 
   &_buttun { 
-    background-color: #34547A;
-    color: #ffff;
+    background-color: $blu_color;
+    color:$predominant_color;
     font-size: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -74,10 +87,10 @@ body {
       text-transform: uppercase;
       font-size: 16px;
       letter-spacing: 0.1em;
-      color: #000000;
+      color: $color_title;
 
       &:hover {
-        color: #34547A;
+        color: $blu_color;
       }
     }
   }
@@ -92,7 +105,7 @@ body {
   .content_about {
     text-align: center;
     & h2 {
-      color: #000000;
+      color: $color_title;
       font-weight: 500;
       font-size: 32px;
       line-height: 37.5px;
@@ -104,7 +117,7 @@ body {
     & p {
       font-size: 16px;
       line-height: 26.25px;
-      color: #727272;
+      color: $color_tex;
       width: 540px;
       padding-bottom: 100px;
     }
@@ -112,7 +125,7 @@ body {
 }
 
 .main__content_projekt {
-  background-color: #34547A;
+  background-color: $blu_color;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -135,13 +148,13 @@ body {
         font-weight: 500;
         font-size: 21px;
         line-height: 24.61px;
-        color: #FFFFFF;
+        color: $predominant_color;
         padding-bottom: 7px;
       }
       & p{
         font-size: 16px;
         line-height: 26.25px;
-        color: #FFFFFF;
+        color: $predominant_color;
       }
     }
   }
@@ -150,7 +163,7 @@ body {
 
 
 .main__content_work {
-  background-color: #EEEFF1;
+  background-color:$silver_color;
   height: 1004px;
 
   .content_work__conteiner {
@@ -169,10 +182,10 @@ body {
     }
 
     & p {
-      text-align: center;
       font-size: 16px;
-      color: #727272;
       line-height: 26.25px;
+      text-align: center;
+      color: $color_tex;
       width: 540px;
       padding-bottom: 57px;
     }
@@ -194,7 +207,7 @@ body {
 
 
 footer {
-  background-color: #34547A;
+  background-color: $blu_color;
   height: 151px;
 
   .footern__content {
@@ -210,14 +223,14 @@ footer {
         font-weight: 500; 
         font-size: 21px; 
         line-height: 24.61px; 
-        color: #FFFFFF; 
+        color: $predominant_color; 
         padding-top: 50px;
       }
 
       & p{ 
          font-size: 13px;
          line-height: 21.33px;
-         color: #FFFFFF;
+         color: $predominant_color;
          padding-top: 15px;
         }
     }

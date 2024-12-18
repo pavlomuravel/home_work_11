@@ -180,13 +180,13 @@ body{
   font-weight:500;
   font-size:21px;
   line-height:24.61px;
-  color:#FFFFFF;
+  color:white;
   padding-bottom:7px;
 }
 .main__content_projekt .content_projekt_items .projekt_items_tex p{
   font-size:16px;
   line-height:26.25px;
-  color:#FFFFFF;
+  color:white;
 }
 
 .main__content_work{
@@ -217,10 +217,10 @@ body{
   padding-bottom:50px;
 }
 .main__content_work .content_work__conteiner p{
-  text-align:center;
   font-size:16px;
-  color:#727272;
   line-height:26.25px;
+  text-align:center;
+  color:#727272;
   width:540px;
   padding-bottom:57px;
 }
@@ -254,13 +254,13 @@ footer .footern__content_conteiner h3{
   font-weight:500;
   font-size:21px;
   line-height:24.61px;
-  color:#FFFFFF;
+  color:white;
   padding-top:50px;
 }
 footer .footern__content_conteiner p{
   font-size:13px;
   line-height:21.33px;
-  color:#FFFFFF;
+  color:white;
   padding-top:15px;
 }
 @media (max-width: 1167px){
