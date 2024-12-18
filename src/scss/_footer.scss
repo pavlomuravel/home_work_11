@@ -1,0 +1,35 @@
+@use"variables";
+
+
+footer {
+    background-color: variables.$blu_color;
+    height: 151px;
+  
+    .footern__content {
+      padding-right: 486px;
+      overflow: hidden;
+  
+      &_conteiner {
+        width: 611px;
+        margin: 0 auto;
+        overflow: hidden;
+  
+        & h3{ 
+          font-weight: 500; 
+          font-size: 21px; 
+          line-height: 24.61px; 
+          color: variables.$predominant_color; 
+          padding-top: 50px;
+        }
+  
+        & p{ 
+           font-size: 13px;
+           line-height: 21.33px;
+           color: variables.$predominant_color;
+           padding-top: 15px;
+          }
+      }
+    }
+  }
+  
+  

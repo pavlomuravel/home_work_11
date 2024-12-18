@@ -48,16 +48,6 @@ table{
   border-collapse:collapse;
   border-spacing:0;
 }
-*{
-  -webkit-box-sizing:border-box;
-          box-sizing:border-box;
-}
-
-body{
-  font-family:Roboto;
-  min-width:1150px;
-  max-width:100%;
-}
 
 .heder{
   margin:0 auto;
@@ -78,6 +68,7 @@ body{
   padding-top:80px;
 }
 .heder__content_title h1{
+  color:#000000;
   font-weight:500;
   font-size:48px;
   padding-top:162px;
@@ -263,6 +254,17 @@ footer .footern__content_conteiner p{
   color:white;
   padding-top:15px;
 }
+*{
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+}
+
+body{
+  font-family:Roboto;
+  min-width:1150px;
+  max-width:100%;
+}
+
 @media (max-width: 1167px){
   body{
     min-width:800px;
@@ -275,6 +277,7 @@ footer .footern__content_conteiner p{
     padding-left:13.7%;
   }
 }
+
 @media (max-width: 1129px){
   .conteiner__video_work{
     padding-inline:9%;
@@ -285,6 +288,7 @@ footer .footern__content_conteiner p{
     overflow:hidden;
   }
 }
+
 @media (max-width: 876px){
   body{
     min-width:600px;
@@ -317,6 +321,7 @@ footer .footern__content_conteiner p{
     overflow:hidden;
   }
 }
+
 @media (max-width: 622px){
   body{
     min-width:320px;
@@ -393,6 +398,7 @@ footer .footern__content_conteiner p{
     overflow:hidden;
   }
 }
+
 @media (max-width: 420px){
   body{
     min-width:220px;
@@ -428,7 +434,7 @@ footer .footern__content_conteiner p{
   .heder__content_nav{
     padding-top:20px;
   }
-  .conteiner__icon_pley{
+  img .conteiner__icon_pley{
     position:absolute;
     margin-left:-573px;
     margin-top:121px;
@@ -439,6 +445,7 @@ footer .footern__content_conteiner p{
     height:auto;
   }
 }
+
 @media (max-width: 375px){
   body{
     min-width:220px;
